@@ -14,4 +14,5 @@ public class Queries {
 	//Hall Details
 	 public static String queryGetExistingHallCount  = " Select Count (Hall_Id) As Count from HallDetails ";
 	 public static String queryInsertHallDetails 	 = " Insert into HallDetails (Hall_Id, Hall_Name, Hall_Type, Area, Rooms, Floors, Kitchen_room, Parking, Lawn, Comment, City, Locality, Sub_Locality, Landmark, Hall_Rent, Maintenance, Electricity, Lawn_Space, Power_Backup, Lift, Security, Staff, Contact_Name, Mobile_No, EmailId, Address, Decoration, Catering, UserId) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) ";
+	 public static String queryUpdateHallDetails 	 = " Update HallDetails set Hall_Name = ? , Hall_Type = ? , Area = ? , Rooms = ? , Floors = ? , Kitchen_room = ? , Parking = ? , Lawn = ? , Comment = ? , City = ? , Locality = ? , Sub_Locality = ? , Landmark = ? , Hall_Rent = ? , Maintenance = ? , Electricity = ? , Lawn_Space = ? , Power_Backup = ? , Lift = ? , Security = ? , Staff = ? , Contact_Name = ? , Mobile_No = ? , EmailId = ? , Address = ? , Decoration = ? , Catering = ? where Hall_Id = ? ";
 }
