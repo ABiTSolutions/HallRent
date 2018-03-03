@@ -18,7 +18,30 @@ public class Queries {
 	// Profile Update
 	public static String queryUpdateProfile  = " Update Registration set Name = ?, EmailId = ?, ContactNo = ?, Address = ? where UserName = ?" ;
 
+<<<<<<< HEAD
 
 	 public static String queryUpdateHallDetails 	 = " Update HallDetails set Hall_Name = ? , Hall_Type = ? , Area = ? , Rooms = ? , Floors = ? , Kitchen_room = ? , Parking = ? , Lawn = ? , Comment = ? , City = ? , Locality = ? , Sub_Locality = ? , Landmark = ? , Hall_Rent = ? , Maintenance = ? , Electricity = ? , Lawn_Space = ? , Power_Backup = ? , Lift = ? , Security = ? , Staff = ? , Contact_Name = ? , Mobile_No = ? , EmailId = ? , Address = ? , Decoration = ? , Catering = ? where Hall_Id = ? ";
 
+=======
+	public static String queryUpdateHallDetails 	 = " Update HallDetails set Hall_Name = ? , Hall_Type = ? , Area = ? , Rooms = ? , Floors = ? , Kitchen_room = ? , Parking = ? , Lawn = ? , Comment = ? , City = ? , Locality = ? , Sub_Locality = ? , Landmark = ? , Hall_Rent = ? , Maintenance = ? , Electricity = ? , Lawn_Space = ? , Power_Backup = ? , Lift = ? , Security = ? , Staff = ? , Contact_Name = ? , Mobile_No = ? , EmailId = ? , Address = ? , Decoration = ? , Catering = ? where Hall_Id = ? ";
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+>>>>>>> 3e3e03aca4600b982d25f727431ce870363dc7a9
 }
