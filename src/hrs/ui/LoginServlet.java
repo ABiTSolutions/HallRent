@@ -65,15 +65,11 @@ public class LoginServlet extends HttpServlet {
 			rs = ps.executeQuery();		
 			
 			if(rs.next()) {	
-<<<<<<< HEAD
-				System.out.println("Testing");
-=======
->>>>>>> 2e0c12fd96357c70a5f40aad5db80e420b79e6dc
 				userId 		= rs.getString("UserId");				
 				userName 	= rs.getString("UserName");
-				
-				if(userRole.equalsIgnoreCase("merchant")) {
-					HttpSession session = request.getSession();
+				HttpSession session = request.getSession();
+				session.setAttribute("userNameLogin",userName);  
+				if(userRole.equalsIgnoreCase("merchant")) {					
 					session.setAttribute("user_Id", userId);
 					response.sendRedirect("dashboard_merchant.jsp");
 				} else if(userRole.equalsIgnoreCase("customer")) {

@@ -6,6 +6,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
+<%session.setAttribute("userNameLogin",null);%>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Hall Renting Service</title>
 <meta charset="UTF-8" />
@@ -33,7 +34,11 @@
     <script type="text/javascript" src="assets/slitslider/js/jquery.ba-cond.min.js"></script>
     <script type="text/javascript" src="assets/slitslider/js/jquery.slitslider.js"></script>
 <!-- slitslider -->
-
+<script>
+window.location.hash="no-back-button";
+window.location.hash="Again-No-back-button";//again because google chrome don't insert first hash into history
+window.onhashchange=function(){window.location.hash="no-back-button";}
+</script> 
 </head>
 <body>
 
