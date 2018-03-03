@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Dashboard - Hall Renting Service</title>
+<title>Admin Dashboard - Hall Renting Service</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <link href="assets/css/bootstrap.min.css" rel="stylesheet">
@@ -119,15 +119,15 @@
             <!-- /widget-header -->
             <div class="widget-content">
               <div class="shortcuts"> 
-			     <a href="merchant_profile.jsp" class="shortcut">
+			     <a href="admin_profile.jsp" class="shortcut">
 					<i class="shortcut-icon icon-list-alt"></i>
 					<span class="shortcut-label">Profile</span> 
 				</a>
-				<a href="merchant_addHall.jsp" class="shortcut">
+				<a href="admin_merchantDetails.jsp" class="shortcut">
 					<i class="shortcut-icon icon-list-alt"></i>
 					<span class="shortcut-label">Merchant Details</span> 
 				</a>
-				<a href="merchant_updateHall.jsp" class="shortcut">
+				<a href="admin_hallDetails.jsp" class="shortcut">
 					<i class="shortcut-icon icon-list-alt"></i> 
 					<span class="shortcut-label">Hall Details</span> 
 				</a>
