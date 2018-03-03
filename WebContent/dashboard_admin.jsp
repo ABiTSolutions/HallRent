@@ -3,14 +3,9 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<<<<<<< HEAD
-<title>Dashboard - Hall Renting Service</title>
+<title>Admin Dashboard - Hall Renting Service</title>
 <meta name="viewport"
 	content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-=======
-<title>Admin Dashboard - Hall Renting Service</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
->>>>>>> 3e3e03aca4600b982d25f727431ce870363dc7a9
 <meta name="apple-mobile-web-app-capable" content="yes">
 <link href="assets/css/bootstrap.min.css" rel="stylesheet">
 <link href="assets/css/bootstrap-responsive.min.css" rel="stylesheet">
@@ -134,7 +129,6 @@
 							<!-- <div class="widget-header"> <i class="icon-bookmark"></i>
               <h3>Important Shortcuts</h3>
             </div> -->
-<<<<<<< HEAD
 							<!-- /widget-header -->
 							<div class="widget-content">
 								<div class="shortcuts">
@@ -157,27 +151,6 @@
 						<!-- /span6 -->
 					</div>
 					<!-- /row -->
-=======
-            <!-- /widget-header -->
-            <div class="widget-content">
-              <div class="shortcuts"> 
-			     <a href="admin_profile.jsp" class="shortcut">
-					<i class="shortcut-icon icon-list-alt"></i>
-					<span class="shortcut-label">Profile</span> 
-				</a>
-				<a href="admin_merchantDetails.jsp" class="shortcut">
-					<i class="shortcut-icon icon-list-alt"></i>
-					<span class="shortcut-label">Merchant Details</span> 
-				</a>
-				<a href="admin_hallDetails.jsp" class="shortcut">
-					<i class="shortcut-icon icon-list-alt"></i> 
-					<span class="shortcut-label">Hall Details</span> 
-				</a>
-				<!-- <a href="teacherRegistration.jsp" class="shortcut">
-					<i class="shortcut-icon icon-list-alt"></i> 
-					<span class="shortcut-label">New Teacher</span> 
-				</a> -->
->>>>>>> 3e3e03aca4600b982d25f727431ce870363dc7a9
 				</div>
 				<!-- /container -->
 			</div>
