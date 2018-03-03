@@ -11,6 +11,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import hrs.dbConnection.DBConnection;
 import hrs.queries.Queries;
@@ -140,9 +141,17 @@ public class RegistrationServlet extends HttpServlet {
 				ps2.setString(2, emailId);
 				ps2.executeUpdate();
 */				
+				HttpSession session = request.getSession();
+				String data = (String) session.getAttribute("userNameLogin");
+				System.out.println("data: "+data);
+				
 				String check = "regSuccess";
 				request.setAttribute("checkIt", check);
-				request.getRequestDispatcher("registration.jsp").forward(request, response);
+				if(data != null) {
+					request.getRequestDispatcher("admin_newRegistration.jsp").forward(request, response);
+				} else {
+					request.getRequestDispatcher("registration.jsp").forward(request, response);
+				}			
 
 			} catch (SQLException e) {
 				// TODO Auto-generated catch block

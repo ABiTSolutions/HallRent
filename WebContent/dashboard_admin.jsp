@@ -141,6 +141,9 @@
 									</a> <a href="admin_hallDetails.jsp" class="shortcut"> <i
 										class="shortcut-icon icon-list-alt"></i> <span
 										class="shortcut-label">Hall Details</span>
+									</a> <a href="admin_newRegistration.jsp" class="shortcut"> <i
+										class="shortcut-icon icon-list-alt"></i> <span
+										class="shortcut-label">New User</span>
 									</a>
 									<!-- <a href="teacherRegistration.jsp" class="shortcut">
 								<!-- /shortcuts -->

@@ -132,25 +132,35 @@
 	<div class="container">
 		<div class="spacer">
 			<div class="row register">
-				<form action="merchant_updateHall.jsp" method="post">
+			
+			
+			
+			
+			
+			<div class="widget widget-nopad">
+						<br><div class="widget-header">
+						<h3>Select Hall Name</h3>
+						</div>
+						<!-- /widget-header -->
+						<div class="widget-content" style="padding: 20px">
 
-					<h4 style="color: #6bb30c;">Select Hall</h4>
-					<br />
-					<div class="row">
-
-						<div class="col-md-6">
-
-							<div class="form-group">
-								<label class="control-label col-sm-4" for="email">Name
-									of Hall:</label>
-								<div class="col-sm-8">
-									<select name="hallName" id="hallName"
+							<form action="merchant_updateHall.jsp" method="POST">
+								<div class="login-fields">
+									<div class="span2">&nbsp;</div>
+									<div class="span2">
+										&nbsp;
+										<div >
+											<p style="text-align: right; font-size: 16px; font-weight: 600;">Select Hall :</p>
+										</div>
+									</div>
+									<div class="field span2">
+										<select name="hallName" id="hallName"
 										onchange="showEmp(this.value);" style="margin-top: 9%;">
 										<option value="0">Select Hall Name</option>
 										<%
-											String userName = (String) session.getAttribute("user_Id");
+										String userName = (String) session.getAttribute("user_Id");
 											statement = connection.createStatement();
-											resultset = statement.executeQuery("Select * from HallDetails where UserId = '" + userName + "' ");
+										resultset = statement.executeQuery("Select * from HallDetails where UserId = '" + userName + "' ");
 											while (resultset.next()) {
 										%>
 										<option value="<%=resultset.getString(2)%>"><%=resultset.getString(2)%></option>
@@ -158,17 +168,19 @@
 											}
 										%>
 									</select>
+									</div>
+									<!-- /field -->
+
+									<div class="span2">
+										<button style="margin-top: 12%; margin-right: -40%;" name="submit"
+											class="button btn btn-primary btn-large">Check</button>
+									</div>
 								</div>
-								<div class="col-sm-3">
-									<button style="margin-top: 9%;" name="submit"
-										class="button btn btn-primary btn-large">Check</button>
-								</div>
-							</div>
+								<!-- /login-fields -->
+							</form>
 
 						</div>
-					</div>
-
-				</form>
+					</div>				
 			</div>
 		</div>
 	</div>

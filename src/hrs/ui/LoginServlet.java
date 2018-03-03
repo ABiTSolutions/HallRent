@@ -51,6 +51,7 @@ public class LoginServlet extends HttpServlet {
 		String userName = null;
 		String password = null;
 		String userRole = null;
+		int isActive	= 0;
 		userName = request.getParameter("username");	
 		password = request.getParameter("password");
 		userRole = request.getParameter("role");
@@ -67,11 +68,16 @@ public class LoginServlet extends HttpServlet {
 			if(rs.next()) {	
 				userId 		= rs.getString("UserId");				
 				userName 	= rs.getString("UserName");
+				isActive 	= rs.getInt("IsActive");
 				HttpSession session = request.getSession();
 				session.setAttribute("userNameLogin",userName);  
 				if(userRole.equalsIgnoreCase("merchant")) {					
 					session.setAttribute("user_Id", userId);
-					response.sendRedirect("dashboard_merchant.jsp");
+					if(isActive == 1) {
+						response.sendRedirect("dashboard_merchant.jsp");
+					} else {
+						response.sendRedirect("index.jsp");
+					}
 				} else if(userRole.equalsIgnoreCase("customer")) {
 					response.sendRedirect("dashboard_customer.jsp");						
 				} else {

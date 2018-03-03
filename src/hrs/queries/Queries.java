@@ -3,7 +3,7 @@ package hrs.queries;
 public class Queries {
 
 	//Login Page
-	public static String queryCheckLoginDetails  	= " Select * from LoginDetails where UserName = ? and Password = ? and UserRole = ?";
+	public static String queryCheckLoginDetails  	= "  Select * from LoginDetails lD Inner Join Registration r on ld.UserName = r.UserName where ld.UserName = ? and ld.Password = ? and ld.UserRole = ?";
 	
 	//Registration
 	public static String queryCheckRegistration  	= " Select * from Registration where UserName = ?";
