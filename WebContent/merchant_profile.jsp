@@ -164,7 +164,7 @@
                 <input type="email" class="form-control" placeholder="Enter Email" name="email" value="<%=resultset.getString("EmailId") %>" required="required">
                 <input type="number" class="form-control" placeholder="Enter Contact Number" name="contactNo" value="<%=resultset.getString("ContactNo") %>">  
                 <input type="text" class="form-control" placeholder="Enter Username" name="userName" value="<%=resultset.getString("UserName") %>" readonly="readonly" required="required">
-                <input type="text" class="form-control" placeholder="User Role" name="role" value="<%=resultset.getString("UserRole") %>" readonly="readonly" required="required">
+                <input type="text" class="form-control" placeholder="User Role" name="userRole" value="<%=resultset.getString("UserRole") %>" readonly="readonly" required="required">
                 <textarea rows="6" class="form-control" placeholder="Address" name="address" value="<%=resultset.getString("Address") %>"></textarea>
                 <% } %>
                 </div>

@@ -66,7 +66,6 @@ public class LoginServlet extends HttpServlet {
 			
 			if(rs.next()) {	
 				System.out.println("Testing");
-				System.out.println("Testing1");
 				userId 		= rs.getString("UserId");				
 				userName 	= rs.getString("UserName");
 				
