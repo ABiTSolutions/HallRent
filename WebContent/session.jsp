@@ -11,12 +11,6 @@
 </body>
 </html> --%>
 <% if (session.getAttribute("userNameLogin") == null) { 
-	System.out.println("NOK");
 %>
-    <jsp:forward page = "index.jsp"/>
-<% } else {
-	System.out.println("OK");
-	//session.setAttribute("userNameLogin",null);
-%>
-   
+    <jsp:forward page = "index.jsp"/>   
 <% } %>

@@ -92,6 +92,12 @@ tr:nth-child(even) {background-color: #f2f2f2;}
 
             <!-- Nav Starts -->
             <div class="navbar-collapse  collapse">
+            <ul class="nav navbar-nav navbar-left">
+						<div class="loginAs">
+							<b>Hi, </b>
+							<%=session.getAttribute("userNameLogin")%>
+						</div>
+					</ul>
               <ul class="nav navbar-nav navbar-right">
                <li><a href="index.jsp">Home</a></li>
                 <li><a href="about.jsp">About</a></li>
@@ -140,7 +146,7 @@ tr:nth-child(even) {background-color: #f2f2f2;}
 						<!-- /widget-header -->
 						<div class="widget-content" style="padding: 20px">
 
-							<form action="teacherApprovalStudent.jsp" method="POST">
+							<form action="AdminMerchantDetailsServlet" method="POST">
 								<div class="login-fields">
 									<div class="span2">&nbsp;</div>
 									<div class="span2">
@@ -168,7 +174,7 @@ tr:nth-child(even) {background-color: #f2f2f2;}
 
 									<div class="span2">
 										<button style="margin-top: 12%; margin-right: -40%;" name="submit"
-											class="button btn btn-primary btn-large">Check</button>
+											class="button btn btn-primary btn-large">Approve</button>
 									</div>
 								</div>
 								<!-- /login-fields -->
